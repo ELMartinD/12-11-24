@@ -77,14 +77,20 @@
 
     .img-fondo {
         background-image: url(/video/Globant Web (6).jpeg);
-        background-position: 100% 30%;
+        background-position: 60% 10%;
         position: relative;
+        height: 300px;
+    }
+
+    .img-fondo-2 {
+        height: 300px;
     }
 
     .img-fondo-3 {
         background-image: url(/video/Globant Web (6).jpeg);
         background-position: 70% 30%;
         position: relative;
+        height: 300px;
     }
 
     .f4,.qr{

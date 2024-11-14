@@ -30,6 +30,7 @@ body {
     background-size: cover;
     background-position: 10% 25%;
     margin: 2% auto;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
 .contenedor-2, .contenedor-3, .contenedor-4, .contenedor-5 {
@@ -180,30 +181,6 @@ body {
     transform: translateY(0);
 }
 
-/* Tabla de información */
-table {
-    width: 60%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid black;
-    background-color: white;
-    color: #000;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Estilos para cada contenedor de imagen de fondo */
 .img-fondo, .img-fondo-2, .img-fondo-3 {
     height: 400px;
     padding-top: 10px;
@@ -215,18 +192,21 @@ tr:hover {
     background-image: url('/video/Globant\ Web\ \(6\).jpeg');
     background-position: 0% 30%;
     position: relative;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
 .img-fondo-2 {
     background-image: url('/video/hornos-2-scaled.jpg');
     background-position: 0% 60%;
     margin-top: 20px;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
 }
 
 .img-fondo-3 {
     background-image: url('/video/673230a86d652.jpeg');
     background-position: 0% 10%;
     margin-top: 20px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
 .img-fondo-5 {

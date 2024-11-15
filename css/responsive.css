@@ -1,4 +1,49 @@
+@media (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Funnel Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    .año-iz {
+        margin-left: 10%;
+        margin-top: 100px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .año-de {
+        margin-left: 60%;
+        width: 200px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .txt-1 {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        margin-top: 10%;
+        border-top-right-radius: 50px;
+        text-align: center;
+        width: 190px;
+    }
+
+    .qr {
+        width: 125px;
+    }
+}
+
+
 @media (max-width: 550px) {
+
     .link-1, .link-2, .link-3{
         display: none;
     }

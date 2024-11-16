@@ -196,7 +196,7 @@
 
         </div>
 
-        <div id="FormaciónAcadémica" class="contenedor-5 fade-in">
+        <div id="FormaciónAcadémica estudios" class="contenedor-5 fade-in">
 
             <h1 class="f5">Formación Académica</h1>
             <div class="contenedor-cuadrados fade-in">
@@ -272,6 +272,46 @@ barras.forEach(barra => {
           });
         });
       </script>
+
+<script>
+    // Función de búsqueda
+    function searchSection() {
+      const query = document.getElementById('search-input').value.trim().toLowerCase();
+  
+      // Busca el primer elemento cuyo ID contenga el texto ingresado
+      const target = Array.from(document.querySelectorAll('[id]')).find(el => 
+        el.id.toLowerCase().includes(query)
+      );
+  
+      if (target) {
+        // Si se encuentra el elemento, desplázate suavemente hasta él
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: 'smooth'
+        });
+  
+        // Opcional: Resalta temporalmente la sección encontrada
+        target.style.border = '0px solid #4CAF50';
+        setTimeout(() => target.style.border = 'none', 2000);
+      } else {
+        // Si no se encuentra, muestra un mensaje
+        alert('No se encontró ninguna sección con ese nombre.');
+      }
+    }
+  
+    // Evento para el botón de búsqueda
+    document.getElementById('search-button').addEventListener('click', searchSection);
+  
+    // Evento para la tecla Enter en el campo de entrada
+    document.getElementById('search-input').addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        searchSection();
+      }
+    });
+  </script>
+  
+  
+  
       
 
 </body>

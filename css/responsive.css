@@ -335,6 +335,19 @@
     }
 }
 
+@media (max-width: 421px){
+    .buttons button {
+        color: white;
+        border: none;
+        padding: 6px 4px;
+        border-radius: 8px;
+        cursor: pointer;
+        background: transparent;
+        transition: 1s;
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 376px) {
 
     *{

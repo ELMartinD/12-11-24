@@ -20,8 +20,17 @@
         border-radius: 15px;
     }
 
-    .f5{
-        margin-top: 5px;
+    .f5 {
+        margin-top: 30px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin-left: 15%;
     }
     
 }
@@ -31,7 +40,6 @@
 @media (max-width: 1280px){
     .buttons button {
         color: white;
-        border: none;
         padding: 10px 10px;
         border-radius: 8px;
         cursor: pointer;
@@ -116,7 +124,6 @@
 
     .buttons button {
         color: white;
-        border: none;
         padding: 8px 12px;
         border-radius: 8px;
         cursor: pointer;
@@ -273,7 +280,6 @@
 
     .buttons button {
         color: white;
-        border: none;
         padding: 5px 5px;
         border-radius: 8px;
         cursor: pointer;
@@ -422,13 +428,12 @@
 
     .buttons button {
         color: white;
-        border: none;
         padding: 6px 4px;
         border-radius: 8px;
         cursor: pointer;
         background: transparent;
         transition: 1s;
-        font-size: 18px;
+        font-size: 16px;
         background: #00000080;
     }
 
@@ -711,7 +716,6 @@
 @media (max-width: 421px){
     .buttons button {
         color: white;
-        border: none;
         padding: 6px 4px;
         border-radius: 8px;
         cursor: pointer;

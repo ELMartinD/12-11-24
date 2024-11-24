@@ -48,11 +48,6 @@
             <div class="video-fondo">
                     <h1 class="f1">Pedro Lazarte</h1>
                     <img class="qr" src="/video/randomqr-256.png" alt="">
-                    <h1 class="f4">O tambien puedes</h1>
-                    <div class="descargar-pdf">
-    
-   
-                        <button id="download-pdf">Descargar en PDF</button>
                         </div>
 
                         
@@ -538,31 +533,32 @@ elements.forEach(element => {
 
   </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
-    document.getElementById('download-pdf').addEventListener('click', async () => {
-        const { jsPDF } = window.jspdf;
+    document.getElementById('downloadPDF').addEventListener('click', async () => {
+        const content = document.getElementById('content');
 
-        // Capturar toda la página
-        const element = document.body; // Selecciona el cuerpo completo
-        const canvas = await html2canvas(element);
-        const imgData = canvas.toDataURL('image/png');
+        try {
+            const canvas = await html2canvas(content, {
+                useCORS: true, // Soporte para imágenes externas
+                scale: 1       // Reduce la escala para evitar sobrecarga
+            });
+            const imgData = canvas.toDataURL('image/png');
+            const pdf = new jspdf.jsPDF('p', 'mm', 'a4');
 
-        // Crear el PDF
-        const pdf = new jsPDF({
-            orientation: 'portrait',
-            unit: 'px',
-            format: [element.offsetWidth, element.offsetHeight],
-        });
+            const imgWidth = 210; // A4 ancho
+            const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-        // Agregar la imagen capturada al PDF
-        pdf.addImage(imgData, 'PNG', 0, 0, element.offsetWidth, element.offsetHeight);
-
-        // Descargar el PDF
-        pdf.save('pagina_completa.pdf');
+            pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+            pdf.save('pagina_completa.pdf');
+        } catch (error) {
+            console.error('Error al generar el PDF:', error);
+            alert('Error: No se pudo generar el PDF. Revisa la consola para más detalles.');
+        }
     });
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
       
 

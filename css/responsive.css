@@ -656,9 +656,21 @@
 
     .f5 {
         color: white;
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
+        padding: 0px;
+        width: 95%;
+        margin: auto;
         margin-bottom: 25px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin-left: 0%;
     }
 
     .modern-content h2 {
@@ -711,9 +723,23 @@
         padding-bottom: 10px;
         margin-bottom: 0px;
     }
+
+    #proyectos {
+        font-size: 25px;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    h1.f1 {
+        margin-top: 50%;
+    }
 }
 
 @media (max-width: 421px){
+    
+
     .buttons button {
         color: white;
         padding: 6px 4px;
@@ -736,12 +762,26 @@
         border-bottom: 0px solid #ffffff;
     }
 
+        .f5 {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 25px;
+        padding: 2px;
+        margin-top: 20px;
+    }
+
     .f5 {
         color: white;
         font-size: 25px;
         text-align: center;
+        width: 95%;
+        margin: auto;
         margin-bottom: 25px;
-        padding: 10px;
+        padding: 2px;
+        margin-top: 20px;
     }
 
     #proyectos {
@@ -787,6 +827,25 @@
         color: white;
         font-size: 20px;
         margin-top: 15px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin-left: 0px;
+    }
+
+    h1.f1 {
+        margin-top: 60%;
+    }
+
+    .habilidades2 {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 

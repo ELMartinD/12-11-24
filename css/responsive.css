@@ -691,6 +691,21 @@
         text-align: center;
         padding-left: 15px;
     }
+
+    .fuente-1 {
+        color: white;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    #certificaciones {
+        font-size: 30px;
+        padding: 5px;
+        color: white;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
 }
 
 @media (max-width: 421px){
@@ -704,6 +719,32 @@
         transition: 1s;
         font-size: 15px;
         background: #00000080;
+    }
+
+    #certificaciones {
+        font-size: 30px;
+        padding: 5px;
+        color: white;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+        border-radius: 30px;
+        border-bottom: 0px solid #ffffff;
+    }
+
+    .f5 {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 25px;
+        padding: 10px;
+    }
+
+    #proyectos {
+        font-size: 25px;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     p {
@@ -736,6 +777,12 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+    }
+
+    .fuente-1 {
+        color: white;
+        font-size: 20px;
+        margin-top: 15px;
     }
 }
 

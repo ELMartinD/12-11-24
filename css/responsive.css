@@ -299,6 +299,7 @@
     transition: 1s;
 }
 
+
 .timeline-img img {
     width: 465px;
     max-height: 120px;
@@ -504,7 +505,7 @@
     }
 
     .timeline-item.fade-in.visible {
-        width: 600px;
+        width: 600px !important;
     }
 
     .timeline-img img {
@@ -668,6 +669,10 @@
 
 
 @media (max-width: 426px) {
+
+    strong {
+        font-size: 15px;
+    }
 
 
     .timeline-img img {

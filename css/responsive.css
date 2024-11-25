@@ -242,13 +242,13 @@
     }
 
     .buttons button {
-        color: rgb(255, 255, 255);
+        color: black;
         padding: 5px 10px;
-        border: 2px solid white;
+        border: 2px solid #000000;
         border-radius: 8px;
         cursor: pointer;
         margin-left: 10px;
-        background: transparent;
+        background: #ffffff00;
         transition: 1s;
         font-size: 18px;
     }
@@ -263,12 +263,10 @@
 
 @media (max-width: 1280px){
     .buttons button {
-        color: white;
         padding: 5px 10px;
         border-radius: 8px;
         cursor: pointer;
         margin-left: 10px;
-        background: #00000080;
         transition: 1s;
         font-size: 18px;
     }
@@ -371,14 +369,11 @@
     }
 
     .buttons button {
-        color: white;
         padding: 5px 10px;
         border-radius: 8px;
         cursor: pointer;
-        background: transparent;
         transition: 1s;
         font-size: 18px;
-        background: #00000080;
     }
     .f1 {
         font-size: 50px;
@@ -543,14 +538,12 @@
 
 
     .buttons button {
-        color: white;
         padding: 5px 5px;
         border-radius: 8px;
         cursor: pointer;
         background: transparent;
         transition: 1s;
         font-size: 16px;
-        background: #00000080;
     }
 
     * {
@@ -714,14 +707,11 @@
     }
 
     .buttons button {
-        color: white;
         padding: 6px 4px;
         border-radius: 8px;
         cursor: pointer;
-        background: transparent;
         transition: 1s;
         font-size: 16px;
-        background: #00000080;
     }
 
     .navbar {
@@ -1034,14 +1024,12 @@
     
 
     .buttons button {
-        color: white;
         padding: 5px 4px;
         border-radius: 8px;
         cursor: pointer;
         background: transparent;
         transition: 1s;
         font-size: 15px;
-        background: #00000080;
     }
 
 }
@@ -1053,15 +1041,12 @@
     }
 
     .buttons button {
-        color: white;
         border: none;
         padding: 4px 4px;
         border-radius: 8px;
         cursor: pointer;
-        background: transparent;
         transition: 1s;
         font-size: 15px;
-        background: #00000080;
     }
 
 
@@ -1096,15 +1081,12 @@
     }
 
     .buttons button {
-        color: white;
         border: none;
         padding: 2px 2px;
         border-radius: 8px;
         cursor: pointer;
-        background: transparent;
         transition: 1s;
         font-size: 13px;
-        background: #00000080;
     }
 
 

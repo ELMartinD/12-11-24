@@ -418,7 +418,7 @@ a:active{
     align-items: center;
     color: #fff;
     padding: 10px 20px;
-    background: #00002f;
+    background: white;
     position: fixed;
     width: 100%;
 }
@@ -508,8 +508,8 @@ a:active{
 }
   
   .buttons button:hover {
-    background-color: #ffffff;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
   }
 
   

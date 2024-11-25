@@ -1015,7 +1015,7 @@ div#estudios {
     left: 50%; /* Centrado horizontalmente */
     transform: translateX(-50%);
     padding: 15px 20px;
-    background-color: #007BFF;
+    background-color: #5943d2;
     color: white;
     border: none;
     border-radius: 50px;
@@ -1035,7 +1035,7 @@ div#estudios {
 }
 
 #scrollButton:hover {
-    background-color: #0056b3;
+    background-color: #5943d2;
 }
 
 #scrollButton span {

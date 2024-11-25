@@ -1101,3 +1101,24 @@ div#estudios {
 #whatsappMessage.show {
     opacity: 1; /* Visible cuando se activa */
 }
+
+
+.barras-1.visible {
+    background-color: #ff00f2;
+    width: 60%;
+}
+
+.barras-2.visible {
+    background-color: #ff00f2;
+    width: 70%;
+}
+
+.barras-3.visible {
+    background-color: #ff00f2;
+    width: 76%;
+}
+
+.barras-4.visible {
+    background-color: #ff00f2;
+    width: 37%;
+}

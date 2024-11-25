@@ -212,21 +212,28 @@
 
 <div class="contenedor-7">
     <div class="certificacion">
-        <img src="video/certification_example.jpg" alt="Scrum Master" class="certificacion-img">
+        <img src="video/certification_example.jpg" alt="Scrum Master" class="certificacion-img" onclick="openModal(this)">
         <h2>Certificación de Scrum Master</h2>
         <p>Scrum Alliance, 2023</p>
     </div>
     <div class="certificacion">
-        <img src="video/a.jpg" alt="Google Data Analytics" class="certificacion-img">
+        <img src="video/a.jpg" alt="Google Data Analytics" class="certificacion-img" onclick="openModal(this)">
         <h2>Google Data Analytics Professional Certificate</h2>
         <p>Coursera, 2022</p>
     </div>
     <div class="certificacion">
-        <img src="video/b.jpg" alt="Cybersecurity" class="certificacion-img">
+        <img src="video/b.jpg" alt="Cybersecurity" class="certificacion-img" onclick="openModal(this)">
         <h2>Cybersecurity Essentials</h2>
         <p>Cisco Networking Academy, 2021</p>
     </div>
 </div>
+
+<!-- Modal -->
+<div id="myModal" class="modal" onclick="closeModal(event)">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="imgModal">
+</div>
+
 
 
 <div class="logos" id="ExperienciaLaboral">
@@ -644,6 +651,26 @@ elements.forEach(element => {
                 behavior: 'smooth'
             });
         });
+    </script>
+
+    <script>
+        // Función para abrir el modal con la imagen
+function openModal(imgElement) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("imgModal");
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+}
+
+// Función para cerrar el modal
+function closeModal(event) {
+    // Verifica si el clic fue fuera de la imagen (en el fondo)
+    if (event.target === document.getElementById("myModal") || event.target.classList.contains('close')) {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+}
+
     </script>
     
 

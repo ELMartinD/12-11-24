@@ -1122,3 +1122,22 @@ div#estudios {
     background-color: #ff00f2;
     width: 37%;
 }
+
+/* Personalizar la barra de desplazamiento para todo el body */
+body::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra */
+}
+
+body::-webkit-scrollbar-track {
+    background: white; /* Color del fondo */
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #5943d2, #5943d2); /* Degradado en el thumb */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5943d2, #5943d2); /* Color al pasar el mouse */
+}

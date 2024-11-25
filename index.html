@@ -25,7 +25,8 @@
     <nav class="navbar">
         <!-- Logo -->
         <div class="logo">
-          <h1>PedroL</h1>
+          <h1 style="font-family: 'Aeonik', sans-serif;
+        font-weight: 300;">PedroL</h1>
         </div>
         <!-- Barra de búsqueda -->
         <div class="search-bar">
@@ -466,6 +467,40 @@
             <p>&copy; 2024 Pedro Lazarte. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botón de WhatsApp -->
+    <div id="whatsappButton">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+
+    <!-- Mensaje flotante -->
+    <div id="whatsappMessage">¡Escribeme por WhatsApp haciendo click aquí!</div>
+
+
+    <script>
+        // Referencias a los elementos
+        const whatsappButton = document.getElementById('whatsappButton');
+        const whatsappMessage = document.getElementById('whatsappMessage');
+
+        // Evento para abrir WhatsApp al hacer clic
+        whatsappButton.addEventListener('click', () => {
+            window.open('https://wa.me/5493815229211/?hola%buenos%dias', '?hola%buenos%dias');
+        });
+
+        // Función para mostrar y ocultar el mensaje flotante
+        function toggleWhatsAppMessage() {
+            // Mostrar el mensaje
+            whatsappMessage.classList.add('show');
+
+            // Ocultar el mensaje después de 3 segundos
+            setTimeout(() => {
+                whatsappMessage.classList.remove('show');
+            }, 2500);
+        }
+
+        // Intervalo para mostrar el mensaje cada 10 segundos
+        setInterval(toggleWhatsAppMessage, 10000);
+    </script>
     
 
     <script>

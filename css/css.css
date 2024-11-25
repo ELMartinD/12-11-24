@@ -503,6 +503,8 @@ a:active{
     background: transparent;
     transition: 1s;
     font-size: 18px;
+    font-family: 'Aeonik', sans-serif;
+    font-weight: 300;
 }
   
   .buttons button:hover {
@@ -1054,4 +1056,48 @@ div#estudios {
     padding: 20px;
     background-color: #f8f9fa;
     border: 1px solid #ddd;
+}
+
+
+/* Botón de WhatsApp */
+#whatsappButton {
+    position: fixed;
+    bottom: 20px; /* Parte inferior */
+    right: 20px; /* Parte derecha */
+    background-color: #25d366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#whatsappButton img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mensaje flotante */
+#whatsappMessage {
+    position: fixed;
+    bottom: 90px; /* Justo encima del botón */
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0; /* Por defecto, está oculto */
+    transition: opacity 0.5s ease; /* Animación para aparecer y desaparecer */
+    z-index: 999;
+}
+
+#whatsappMessage.show {
+    opacity: 1; /* Visible cuando se activa */
 }

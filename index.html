@@ -581,29 +581,36 @@ elements.forEach(element => {
 
   </script>
       
-<script>
-    // Selecciona el botón
-    const scrollButton = document.getElementById('scrollButton');
-
-    // Selecciona la sección de destino
-    const targetSection = document.getElementById('habilidades');
-
-    // Mostrar/ocultar el botón en función del scroll
-    window.addEventListener('scroll', () => {
-        // Si el usuario hace scroll hacia abajo, ocultamos el botón
-        if (window.scrollY > 50) { // Si la posición del scroll supera 50px
-            scrollButton.classList.add('hidden');
-        } else {
-            scrollButton.classList.remove('hidden'); // Muestra el botón al volver arriba
-        }
-    });
-
-    // Agrega el evento de clic al botón
-    scrollButton.addEventListener('click', () => {
-        // Realiza un desplazamiento suave hacia la sección
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-    });
-</script>
+      <script>
+        // Selecciona el botón
+        const scrollButton = document.getElementById('scrollButton');
+    
+        // Selecciona la sección de destino
+        const targetSection = document.getElementById('habilidades');
+    
+        // Mostrar/ocultar el botón en función del scroll
+        window.addEventListener('scroll', () => {
+            // Si el usuario hace scroll hacia abajo, ocultamos el botón
+            if (window.scrollY > 50) { // Si la posición del scroll supera 50px
+                scrollButton.classList.add('hidden');
+            } else {
+                scrollButton.classList.remove('hidden'); // Muestra el botón al volver arriba
+            }
+        });
+    
+        // Agrega el evento de clic al botón
+        scrollButton.addEventListener('click', () => {
+            // Calcula la posición ajustada (10px hacia arriba)
+            const targetPosition = targetSection.offsetTop - 30;
+    
+            // Realiza un desplazamiento suave hacia la posición ajustada
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    
 
 </body>
 </html>

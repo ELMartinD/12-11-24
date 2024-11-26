@@ -1117,6 +1117,12 @@
     .imagen-iz{
         width: 100%;
     }
+
+    .img-fondo-2.fade-in.visible {
+        width: 90%;
+        border-bottom-right-radius: 70px;
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 421px){

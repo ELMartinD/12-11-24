@@ -240,21 +240,21 @@ h1.f3.fade-in.visible {
     background-image: url('/video/Globant\ Web\ \(6\).jpeg');
     background-position: 0% 30%;
     position: relative;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    border-bottom-left-radius: 70px;
 }
 
 .img-fondo-2 {
     background-image: url('/video/hornos-2-scaled.jpg');
     background-position: 0% 60%;
     margin-top: 20px;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+    border-top-right-radius: 70px;
 }
 
 .img-fondo-3 {
     background-image: url('/video/673230a86d652.jpeg');
     background-position: 0% 10%;
     margin-top: 20px;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    border-bottom-left-radius: 70px;
 }
 
 .img-fondo-5 {
@@ -285,24 +285,6 @@ h1.f3.fade-in.visible {
     text-align: center;
 }
 
-.descripcion-iz, .descripcion-de {
-    width: 30%;
-    padding: 10px;
-    font-size: 14px;
-    color: black;
-    background: white;
-    margin-top: 2%;
-}
-
-.descripcion-iz {
-    margin-left: 10%;
-    border-top-right-radius: 30px;
-}
-
-.descripcion-de {
-    margin-left: 55%;
-    border-top-left-radius: 30px;
-}
 
 /* Espacio adicional */
 .espacio {
@@ -655,6 +637,12 @@ div#habilidades {
     padding: 20px;
     background: black;
     border-radius: 20px;
+    transition: 0.3s;
+}
+
+.habilidades2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -975,6 +963,11 @@ div#estudios {
     gap: 30px;
 }
 
+.modern-timeline-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .modern-timeline-item {
     display: flex;
     flex-wrap: wrap;
@@ -983,6 +976,7 @@ div#estudios {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.3s;
 }
 
 .modern-content, .modern-img {
@@ -1007,6 +1001,7 @@ div#estudios {
     border-radius: 10px;
     object-fit: cover;
     height: 200px;
+    object-position: 0% 30%;
 }
 
 
@@ -1223,4 +1218,77 @@ body::-webkit-scrollbar-thumb:hover {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+.contenedor-exp {
+    display: flex;
+}
+
+.contenedor-exp-2 {
+    width: 100%;
+    display: flex
+;
+}
+
+
+.contenedor-exp {
+    width: 100%;
+    display: flex;
+}
+
+.descripcion-cont{
+    margin: 100px;
+}
+
+.año-iz{
+    width: 50%;
+}
+
+.descripcion-iz {
+    width: 30%;
+    margin: auto;
+}
+
+.descripcion-cont {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.descripcion-cont:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.descripcion-txt{
+    text-align: center;
+}
+
+.imagen-iz{
+    width: 70%;
+}
+
+.img-fondo.fade-in.visible {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-right: 0px;
+}
+
+.img-fondo-2.fade-in.visible {
+    width: 90%;
+    border-bottom-right-radius: 70px;
+    margin-top: 30px;
+}
+
+.img-fondo-3.fade-in.visible {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-right: 0px;
+    margin-top: 30px;
+    border-top-left-radius: 70px;
 }

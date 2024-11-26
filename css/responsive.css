@@ -719,6 +719,22 @@
         font-size: 15px;
     }
 
+    #whatsappMessage {
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        background-color: #fff;
+        color: #333;
+        padding: 10px 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        font-size: 15px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 999;
+    }
+
 
     .timeline-img img {
         width: 305px;

@@ -1123,6 +1123,15 @@
         border-bottom-right-radius: 70px;
         margin-top: 0px;
     }
+
+    .img-fondo-3.fade-in.visible {
+        width: 90%;
+        position: relative;
+        margin: auto;
+        margin-right: 0px;
+        margin-top: 0px;
+        border-top-left-radius: 70px;
+    }
 }
 
 @media (max-width: 421px){

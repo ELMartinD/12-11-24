@@ -53,7 +53,7 @@ body {
     background-image: url(/video/xd.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 10% 20%;
+    background-position: 30% 40%;
     margin-top: 2%;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
@@ -78,7 +78,7 @@ body {
 
 /* Sección de texto con video de fondo */
 .video-fondo {
-    margin-top: 10%;
+    margin-top: 12%;
     margin-left: 10%;
     color: white;
     font-weight: 900;
@@ -155,7 +155,7 @@ button#download-pdf {
 .barra {
     height: 100%;
     width: 0%; 
-    background-color: #4caf50;
+    background-color: #5943d2;
     border-radius: 10px;
     transition: width 2s ease-out;
 }
@@ -179,22 +179,22 @@ button#download-pdf {
 
 .barra-1.visible{
     width: 55%;
-    background: red;
+    background: #5943d2;
 }
 
 .barra-2.visible{
     width: 95%;
-    background: red;
+    background: #5943d2;
 }
 
 .barra-3.visible{
     width: 35%;
-    background: red;
+    background: #5943d2;
 }
 
 .barra-4.visible{
     width: 75%;
-    background: red;
+    background: #5943d2;
 }
 
 .fuente-1 {
@@ -635,7 +635,7 @@ div#habilidades {
 
 .habilidades2 {
     padding: 20px;
-    background: black;
+    background: #0000009e;
     border-radius: 20px;
     transition: 0.3s;
 }
@@ -1099,22 +1099,22 @@ div#estudios {
 
 
 .barras-1.visible {
-    background-color: #ff00f2;
+    background-color: #5943d2;
     width: 60%;
 }
 
 .barras-2.visible {
-    background-color: #ff00f2;
+    background-color: #5943d2;
     width: 70%;
 }
 
 .barras-3.visible {
-    background-color: #ff00f2;
+    background-color: #5943d2;
     width: 76%;
 }
 
 .barras-4.visible {
-    background-color: #ff00f2;
+    background-color: #5943d2;
     width: 37%;
 }
 

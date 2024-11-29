@@ -115,6 +115,7 @@ body {
 .f1 {
     font-size: 50px;
     color: white;
+    text-shadow: 2px 2px 5px rgb(0 0 0 / 90%);
 }
 
 .f2 {

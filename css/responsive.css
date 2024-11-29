@@ -1339,7 +1339,9 @@
     }
 
     h1.f1 {
-        margin-top: 50%;
+        margin-top: 105%;
+        font-size: 40px;
+        width: 200px;
     }
 
 }
